@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  margin: 10px;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  background-color: #e2e2e2;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header img {
+  display: flex;
+
+  padding: 3px;
+  height: 50px;
+}
+.p-ins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+#menu {
+  list-style: none;
+  padding: 1;
+  text-align: center;
+  flex: 1 1 100px;
+}
+#menu li {
+  display: inline-block;
+}
+
+#menu li a:hover {
+  background-color: #dabf66;
+  transition: background-color 0.5s;
+}
+.s-body {
+  height: 500vh;
+}
+div {
+  text-align: justify;
+  display: inline-block;
+  column-count: 2;
+  margin-left: 100, px;
+}
+
+main {
+  flex-direction: column;
+  flex: 20 1 500px;
+  text-align: justify;
+  padding: 10px;
+  height: calc(100vh - 50px);
+  background-color: #ffffff;
+  
+}
+
+.container img {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+figure img {
+  margin-left: 70px;
+  max-width: 200px;
+  max-height: 150px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.container p {
+  text-align: justify;
+  padding: 10px;
+  font-size: 15px;
+}
+fieldset {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  width: 60%;
+  margin-left: 200px;
+}
+
+form {
+  
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  margin-left: 50px;
+}
+.botao {
+  align-items: center;
+  padding: 50px;
+}
+.botao-b{
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #e2e2e2;
+  color: #000000;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.ins-main {
+
+  display: flex;
+  align-items: center;
+}
+
+.form-ins {
+  display: flex;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.open-menu-button {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content li a {
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-nav {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+}
+
+.disappear {
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+}
+
+.p-home {
+  display: flex;
+  justify-content: center;
+  grid-template-areas: "main main main aside";
+
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside{
+  align-items: center;
+  height: 1000px;
+  width: 200px;
+  background-color:#dabf66 ;
+  grid-area: aside;
+}
+.p-propaganda{
+  grid-area: aside;
+}
+.propaganda-1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+@media (max-width : 666px) {
+  .p-propaganda{
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .services-grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  figcaption {
+    text-align: center;
+  }
+
+  .open-menu-button {
+    display: inline-block;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+
+  }
+  .p-home {
+    flex-direction: column;
+  }
+  aside{
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background-color:#dabf66 ;
+    padding: 10px;
+  }
+}
+.check-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+.p-img{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.botaozin{
+  color: #000000;
+  text-decoration: none;
+  padding: 30px;
+  
+}
+.tabela {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
